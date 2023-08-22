@@ -31,7 +31,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 10000;
-    background: whitesmoke;
+    background: white;
     height: 80px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -92,10 +92,11 @@ a.active,a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background:whitesmoke;
         top: 80px;
         left: -100%;
         text-align: center;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition:  all .5s;
     }
 
@@ -122,11 +123,25 @@ a.active,a:hover{
         display: block;
     }
 
+    /* #video-content{
+        display: none;
+    } */
+
+    .box-content-vd{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 50px;
+        color: white;
+        z-index: 100;
+    }
+
     ul{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background:whitesmoke;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         top: 80px;
         left: -100%;
         text-align: center;
@@ -156,15 +171,65 @@ a.active,a:hover{
     overflow: hidden;
 }
 
+.video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .box-content-vd{
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 20px;
+    padding: 15px;
     color: white;
+    z-index: 100;
 }
 
 .box-content-vd .section-title{
-    font-size: 5em;
+    padding-left: 250px;
+    font-size: 3em;
     font-family: bevietnampro_bold;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Content */
+.container{
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 20px;
+}
+
+.content{
+    padding: 20px;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: bevietnampro_bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
