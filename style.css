@@ -1,4 +1,146 @@
-body{
+@font-face {
+    font-family: colonnamt;
+    src: url(font/colonnamt.ttf);
+}
+
+@font-face {
+    font-family: bevietnampro_light ;
+    src: url(font/bevietnampro_light.ttf);
+}
+
+@font-face {
+    font-family: bevietnampro_bold ;
+    src: url(font/bevietnampro_bold.ttf);
+}
+
+*{
     margin: 0;
     padding: 0;
+    text-decoration:  none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: bevietnampro_bold;
+}
+
+nav{
+    background: whitesmoke;
+    height: 80px;
+}
+
+label.logo{
+    color: #0A067D;
+    font-size: 60px;
+    font-family: colonnamt;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 17px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    transition: .5s;
+    color: #0A067D;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media(max-width: 1169px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:whitesmoke;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all .5s;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0A067D;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:whitesmoke;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all .5s;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0A067D;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
