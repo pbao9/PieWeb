@@ -4,12 +4,12 @@
 }
 
 @font-face {
-    font-family: bevietnampro_light ;
+    font-family: bevietnampro_light;
     src: url(font/bevietnampro_light.ttf);
 }
 
 @font-face {
-    font-family: bevietnampro_bold ;
+    font-family: bevietnampro_bold;
     src: url(font/bevietnampro_bold.ttf);
 }
 
@@ -25,9 +25,15 @@ body{
     font-family: bevietnampro_light;
 }
 
-nav{
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
     background: whitesmoke;
     height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label.logo{
@@ -38,19 +44,19 @@ label.logo{
     padding: 0 100px;
 }
 
-nav ul{
+header ul{
     float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+header ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
     font-size: 17px;
 }
 
-nav ul li a{
+header ul li a{
     color: black;
     font-size: 17px;
     padding: 7px 13px;
@@ -143,4 +149,22 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+}
+
+#video-content{
+    position: relative;
+    overflow: hidden;
+}
+
+.box-content-vd{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+}
+
+.box-content-vd .section-title{
+    font-size: 5em;
+    font-family: bevietnampro_bold;
 }

@@ -1,1 +1,0 @@
-alert('Thử java sờ cờ ríp')
