@@ -30,14 +30,15 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10000;
-    background: white;
+    background: black;
+    z-index: 999;
     height: 80px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px); 
 }
 
 label.logo{
-    color: #0A067D;
+    color: white;
     font-size: 60px;
     font-family: colonnamt;
     line-height: 80px;
@@ -57,15 +58,17 @@ header ul li{
 }
 
 header ul li a{
-    color: black;
+    color: white;
+    font-family: bevietnampro_light;
     font-size: 17px;
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
 a.active,a:hover{
     transition: .5s;
-    color: #0A067D;
+    background-color: #272727;
+    border-radius: 15px;
 }
 
 .checkbtn{
@@ -82,9 +85,10 @@ a.active,a:hover{
     display: none;
 }
 
-
+/* Video */
 
 #video-content{
+    margin-top: 80px;
     position: relative;
     overflow: hidden;
 }
@@ -93,7 +97,7 @@ a.active,a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 600px;
 }
 
 .video-container video {
@@ -108,12 +112,13 @@ a.active,a:hover{
     right: 0;
     padding: 15px;
     color: white;
-    z-index: 100;
+    z-index: 1;
 }
 
 .box-content-vd .section-title{
     padding-left: 250px;
-    font-size: 3em;
+    margin-bottom: 120px;
+    font-size: 5em;
     font-family: bevietnampro_bold;
 }
 
@@ -123,9 +128,35 @@ a.active,a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.01);
+    z-index: 1;
 }
+
+.download-me{
+    background-color: #316ea3;
+    height: 60px;
+    padding: 15px;
+}
+
+
+.read-more{
+    background-color: #7fa8cc;
+    padding: 15px;
+    height: 60px;
+}
+
+
+.download-me a, .read-more a{
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    margin-left: 150px;
+    font-size: 1.5em;
+    font-family: bevietnampro_bold;
+    cursor: pointer;
+}
+
 
 /* Content */
 .container{
