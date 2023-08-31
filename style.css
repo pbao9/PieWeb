@@ -124,49 +124,37 @@ a.active,a:hover{
 
 
 .pie-readmore{
-    height: 550px;
+    height: 350px;
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-
 .img-readmore-1{
     width:100%;
-    height: 550px;
+    height: 450px;
     object-fit: cover;
-    object-position: center 28%;
+    object-position: center 0%%;
 }
 
 .readmore-content{
     position: absolute;
     z-index: 1;
     top: 35px;
-    left: 15px;
+    left: 450px;
     background: white;
-    padding: 15px;
-    margin-left: 50px;
-    width: 450px;
-    height: auto;
+    padding: 20px;
+    width: 550px;
+    height: 270px;
     border-radius: 25px;
+    font-size: 1.25em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
 }
 
 
-.readmore-content:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
-}
-
-.readmore-content h2{
+.readmore-content h2, .readmore-content p{
     margin: 0 0 10px;
 }
-
-.readmore-content p{
-    margin: 0 0 10px;
-}
-
 
 .btn-readmore{
     display: inline-block;
@@ -180,6 +168,36 @@ a.active,a:hover{
 .btn-readmore:hover{
     background-color: #0A067D;
 }
+
+.pie-readmore.car{
+    background: #000000;
+    height: 450px;
+    display: flex;
+}
+
+.content.car{
+    color: #fff;
+    width: 650px;
+    padding: 50px 50px;
+    margin-left: 420px;
+}
+
+.content.car h2, .content.car p, .content.car a{
+    font-size: 1.25rem;
+    margin: 0 0 30px;
+}
+
+.btn-readmore.car{
+    background-color: #fff;
+    color: #000000;
+}
+
+.image-car{
+    max-width: 100%;
+    padding: 50px;
+    margin-left: 20vh;
+}
+
 
 
 /* Content */
