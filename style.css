@@ -30,9 +30,9 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     z-index: 999;
-    height: 80px;
+    height: 60px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px); 
 }
@@ -41,7 +41,7 @@ label.logo{
     color: white;
     font-size: 60px;
     font-family: colonnamt;
-    line-height: 80px;
+    line-height: 60px;
     padding: 0 100px;
 }
 
@@ -52,14 +52,14 @@ header ul{
 
 header ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
     margin: 0 5px;
     font-size: 17px;
 }
 
 header ul li a{
     color: white;
-    font-family: bevietnampro_light;
+    font-family: bevietnampro_bold;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 15px;
@@ -88,7 +88,7 @@ a.active,a:hover{
 /* Video */
 
 #video-content{
-    margin-top: 80px;
+    margin-top: 60px;
     position: relative;
     overflow: hidden;
 }
@@ -117,44 +117,68 @@ a.active,a:hover{
 
 .box-content-vd .section-title{
     padding-left: 250px;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     font-size: 5em;
     font-family: bevietnampro_bold;
 }
 
-.background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.pie-readmore{
+    height: 550px;
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.01);
+    overflow: hidden;
+}
+
+
+.img-readmore-1{
+    width:100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+.readmore-content{
+    position: absolute;
     z-index: 1;
-}
-
-.download-me{
-    background-color: #316ea3;
-    height: 60px;
+    top: 35px;
+    left: 15px;
+    background: white;
     padding: 15px;
+    margin-left: 50px;
+    width: 450px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
 
-.read-more{
-    background-color: #7fa8cc;
-    padding: 15px;
-    height: 60px;
+.readmore-content:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.readmore-content h2{
+    margin: 0 0 10px;
+}
+
+.readmore-content p{
+    margin: 0 0 10px;
 }
 
 
-.download-me a, .read-more a{
-    text-decoration: none;
+.btn-readmore{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2697F9;
     color: #fff;
-    align-items: center;
-    text-align: center;
-    margin-left: 150px;
-    font-size: 1.5em;
-    font-family: bevietnampro_bold;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.btn-readmore:hover{
+    background-color: #0A067D;
 }
 
 
@@ -273,6 +297,13 @@ a.active,a:hover{
     
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
 
 

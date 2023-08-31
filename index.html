@@ -1,117 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pie. Siêu Ứng Dụng Đa Dịch Vụ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="image/logo_html.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/logo_html.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <header>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <label class="logo">Pie</label>        
-        <ul class="pie">
-            <li><a href="#">Về Pie</a></li>
-            <li><a href="#">Người dùng</a></li>
-            <li><a href="#">Đối tác tài xế</a></li>
-            <li><a href="#">Hợp tác cùng Pie</a></li>
-            <li><a href="#">Doanh nghiệp / Công ty</a></li>
-        </ul>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo">Pie</label>
+      <ul class="pie">
+        <li><a href="#">Về Pie</a></li>
+        <li><a href="#">Người dùng</a></li>
+        <li><a href="#">Đối tác tài xế</a></li>
+        <li><a href="#">Hợp tác cùng Pie</a></li>
+        <li><a href="#">Doanh nghiệp / Công ty</a></li>
+      </ul>
     </header>
     <div id="video-content">
-        <div class="video-container">
-            <video id="hero-video" playsinline="" preload="" loop="" muted="" autoplay="">
-                <source src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_singapore_q50_mobile.webm" media="screen and (min-width:768px)" type="video/webm">
-                <source src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_singapore_q50_mobile.mp4" media="screen and (min-width:768px)">
-                <source src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_sg_q50.webm" type="video/webm">
-                <source src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_sg_q50.mp4">
-                </video>
-        </div>
-        <div class="download-me"><a href="">Tải ngay ứng dụng</a></div>
-        <div class="read-more"><a href="">Xem thêm về ứng dụng Pie!</a></div>
-    <div class="box-content-vd"><h1 class="section-title">Pie. Tiện lợi, thân thiện với mọi người.</h1></div>
-    <div class="background-overlay"></div>
+      <div class="video-container">
+        <video
+          id="hero-video"
+          playsinline=""
+          preload=""
+          loop=""
+          muted=""
+          autoplay=""
+        >
+          <source
+            src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_singapore_q50_mobile.webm"
+            media="screen and (min-width:768px)"
+            type="video/webm"
+          />
+          <source
+            src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_singapore_q50_mobile.mp4"
+            media="screen and (min-width:768px)"
+          />
+          <source
+            src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_sg_q50.webm"
+            type="video/webm"
+          />
+          <source
+            src="https://assets.grab.com/wp-content/uploads/media/videos/hero_banner_sg_q50.mp4"
+          />
+        </video>
+      </div>
+      <div class="box-content-vd">
+        <h1 class="section-title">Pie. Tiện lợi, thân thiện với mọi người.</h1>
+      </div>
+    </div>
+
+    <div class="pie-readmore">
+      <img src="image/background-1.jpg" alt="" class="img-readmore-1" />
+      <div class="readmore-content">
+        <h2>
+          Pie sẽ luôn cung cấp những chương trình khuyến mãi đến cho khách hàng
+          thân thiết!
+        </h2>
+        <p>
+          Các chương trình khuyến mãi sẽ thường diễn ra ở các ngày đôi, ngày
+          lễ...
+        </p>
+        <a href="#" class="btn-readmore">Tìm hiểu thêm</a>
+        <a href="#" class="btn-readmore">Tải ứng dụng</a>
+      </div>
     </div>
 
     <!-- Nội dung -->
     <div class="container">
-        <div class="content-grid1">
+      <div class="content-grid1">
         <div class="content-desc">
-            <span>Từ những dịch vụ thiết yếu đến cơ hội gia tăng thu nhập. Tất cả đều có trên một nền tảng.</span>
+          <span
+            >Từ những dịch vụ thiết yếu đến cơ hội gia tăng thu nhập. Tất cả đều
+            có trên một nền tảng.</span
+          >
         </div>
-        <div class="content-desc2"></div></div>
-        
-        <div class="content-item">
-            <ul class="menu">
-                <li class="menu-item ntd"><a href="#">Người tiêu dùng</a></li>
-                <li class="menu-item tx"><a href="#">Đối tác tài xế</a></li>
-                <li class="menu-item tn"><a href="#">Đối tác thương nhân</a></li>
-                <li class="menu-item dn"><a href="#">Doanh nghiệp</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="content-grid ntd-content">
-                <div class="content-item-user-1">
-                    <span>Giao hàng</span>
-                </div>
-                <div class="content-item-user-2">
-                    <span>Đồ ăn</span>
-                </div>
-            </div>
-            <div class="content-grid tx-content">
-                <!-- Nội dung cho Đối tác tài xế -->
-                <h1>Nội dung tài xế</h1>
-                Lorem, ipsum dolor sit amet consectetur 
-                adipisicing elit. Officiis voluptatum quos distinctio debitis repellat? Expedita, sequi ullam quisquam voluptates rem quas quaerat magni sit cumque cupiditate nihil architecto aliquam, nulla numquam odit illo dolore reprehenderit recusandae impedit in obcaecati repudiandae consequuntur. Reiciendis fugiat commodi nobis! Similique est quidem labore minima dolorum dolor sint deleniti voluptatibus ab dignissimos quaerat, ad doloribus esse ullam ratione, quo perferendis. Iusto quaerat id error! Ullam necessitatibus sit pariatur dicta nam ipsa corrupti, alias expedita quos aspernatur quisquam sequi earum, sed facilis illo dolorum exercitationem nulla aliquid et magnam deleniti culpa possimus fugiat. Laudantium, velit. Perferendis, mollitia ea necessitatibus odio nostrum tempora et itaque optio! Nemo laudantium ad incidunt atque ipsum beatae consectetur cumque, in, deserunt reiciendis aperiam consequuntur suscipit minima, ea harum possimus numquam esse asperiores sit! Consequatur id dolore corporis, laudantium porro, molestiae enim beatae ipsum magnam odit dolorem deleniti alias, tenetur eum tempora.
-            </div>
-            <div class="content-grid tn-content">
-                <!-- Nội dung cho Đối tác thương nhân -->
-                <h1>Nội dung thương nhân</h1>
-                Lorem ipsum dolor sit amet consec
-                tetur adipisicing elit. Praesentium, dolore 
-                ab illum qui reprehenderit officiis iure sequi! Repelle
-                ndus minus obcaecati iste. Ex quae inventore quo amet pariatur. Nam fuga, commodi quasi excepturi quia quo quisquam aspernatur labore tenetur! Molestias totam quisquam aspernatur, adipisci dicta vero sequi omnis distinctio pariatur neque ab est dolorem? Quaerat quis molestiae fugiat asperiores iusto dolore culpa optio odit rem necessitatibus, mollitia tenetur. Nobis quam consequuntur culpa quas, veniam sit doloremque! Veniam, beatae eveniet eius consequatur maxime vel porro non ea cupiditate. Repudiandae totam modi non odio? Dolor iure omnis doloremque tenetur adipisci dicta sequi earum, vitae non fugit eveniet corporis quidem beatae minima mollitia rerum exercitationem quae nam veritatis commodi dolores. Fugit enim ea, deserunt ab, at numquam praesentium, accusantium natus qui omnis ipsa et distinctio? Eius numquam recusandae culpa minima consectetur saepe? Reiciendis ea possimus obcaecati asperiores exercitationem officiis laudantium? Omnis, facilis quas. Possimus quam fugiat voluptas cumque reprehenderit quod illo impedit quidem ipsa, eum vero recusandae reiciendis fuga veniam nesciunt incidunt est id nisi! Amet provident est explicabo laudantium. Quia, dolore atque. Culpa accusamus molestiae ipsum ab inventore est at ut. Cumque numquam quo inventore a animi odit recusandae ipsa temporibus quae. Qui id dicta veritatis, repellat, eos iusto numquam omnis facilis sit, nam temporibus. Consectetur, quam fugit. Ea voluptatibus harum vitae autem minima ipsa sint ipsum. Ipsam, repellat libero praesentium molestiae soluta delectus cum deleniti illum architecto quae. Aut suscipit odio quas voluptatibus, 
-                nulla quo. Cum repellat nam accusamus unde nesciunt laudantium?
-            </div>
-            <div class="content-grid dn-content">
-                <!-- Nội dung cho Doanh nghiệp -->
-                <h1>Nội dung doanh nghiệp</h1>
-                Lorem ipsum dolor sit amet conse
-                ctetur adipisicing elit. Neque soluta placeat optio sequi voluptatem! Et hic suscipit perferendis, inventore incidunt sapiente quis tenetur repellat, mollitia natus quo pariatur? Id modi aperiam rerum animi unde. A neque tempora facere nesciunt quam quibusdam excepturi? Quo dolor quasi labore voluptates. Blanditiis, adipisci id possimus itaque ab, assumenda commodi atque nostrum sed consequatur pariatur facilis impedit. Qui, maxime? Alias quod veniam repellendus ipsum reprehenderit itaque, ut quaerat eum accusamus aspernatur nobis sint maiores nesciunt veritatis ab! Officia, molestiae. Repellat et minima doloribus sapiente dolores. Tempora, culpa harum. Iure sequi illo magni optio, nam voluptatibus cumque natus nulla delectus ex placeat odio quae deserunt a quam. Maiores culpa neque nam? Quas mollitia fugiat similique tempore blanditiis nam repellendus hic corporis laboriosam amet quibusdam fuga eaque voluptates soluta quidem neque perspiciatis nesciunt sequi delectus temporibus, labore odio. Quam pariatur animi expedita porro doloribus nostrum nisi nesciunt, hic iure cupiditate tenetur, consectetur ab aspernatur dolorem sequi quisquam eligendi explicabo, aut illo aliquid facilis dignissimos placeat. Earum voluptates nesciunt ea aliquid reiciendis beatae ipsam illum dolore, soluta dignissimos, dolor sapiente ad fugiat vel veniam? Unde fuga exercitationem iste necessitatibus rerum perspiciatis tempora ipsa. Adipisci debitis, dolore at deleniti nihil totam, quod fugiat cum autem obcaecati, saepe quasi nostrum? Dolore excepturi voluptates sequi iure asperiores tenetur explicabo minus consequatur tempore facilis, ipsa aliquam aut ea animi reprehenderit porro pariatur mollitia. Vero beatae voluptates dolor! Nesciunt dicta illum recusandae tempora et optio iste eaque? Nesciunt minima voluptate dolores ad, tenetur voluptatibus nihil excepturi voluptas incidunt veniam illum unde beatae vitae corrupti. Illum quos fugiat tenetur perferendis nemo! Atque odit ex natus alias perferendis iure exercitationem fugiat eius facere non corrupti nesciunt mollitia fuga, esse eos cum tempore, ad placeat sunt quasi doloribus magni! Iste, totam. Necessitatibus accusantium dolorum tempora sint quidem doloremque facere ipsam mollitia, eum nemo repellendus obcaecati delectus officiis saepe. Voluptatibus id, praesentium officia rerum quibusdam magni ipsa quis a in maiores. Velit illo nesciunt quas similique modi consequuntur, dolore totam voluptatem ea laboriosam nostrum maiores cum necessitatibus assumenda nobis non unde doloremque neque harum quaerat nemo dolor pariatur? Tenetur animi enim laboriosam earum, quibusdam natus excepturi possimus soluta error quod minima reprehenderit laborum nesciunt commodi blanditiis sequi quam illo velit. Libero quae nemo in, harum fugiat repellendus, consequuntur, aut odit sit dolorum quas. Veniam dolore veritatis earum quo ea sed nihil labore, cumque, dignissimos enim quisquam, aliquid deserunt. Beatae officiis sequi dolorem dignissimos iste soluta quidem facere vel eius dolore, inventore aliquid veniam doloremque quae ullam. Exercitationem incidunt vel accusamus accusantium perspiciatis? Dicta vitae assumenda, suscipit ipsum officiis quis in tenetur totam nihil nesciunt consequuntur unde dolorum quidem. Debitis ut eveniet mollitia soluta in quia, doloremque, labore ad rerum magnam animi voluptates quidem amet natus odio molestiae, totam at illum facilis praesentium libero quibusdam. Quibusdam, deleniti? Impedit tenetur veniam facere ullam soluta delectus inventore, deleniti distinctio commodi repellendus ipsum earum recusandae numquam ipsa amet incidunt possimus perspiciatis, necessitatibus saepe sit dolorum. Sapiente hic est quod architecto modi minus quos quasi ut! Fugiat natus rerum molestias delectus quis illo dolores quibusdam magni maiores in, officia nemo quos debitis sed a perferendis. Nulla ullam obcaecati quis maiores minima quibusdam! Rerum, quidem doloribus porro laboriosam voluptate culpa, dolores provident eos minima nulla deleniti quaerat quas sed reiciendis corrupti optio. Nostrum error possimus tempora. Animi, explicabo perferendis. Tempore est consequuntur esse, vero magni pariatur et tenetur, harum sed doloremque in quis dolorum accusamus ratione quisquam eius praesentium autem. Tenetur totam deleniti necessitatibus non assumenda minus a iure? Debitis beatae doloremque praesentium, quidem, rem tempora porro cum ab optio incidunt, similique perspiciatis omnis quod animi ea nemo. Quae, delectus. Architecto pariatur eos est ipsum ipsam placeat obcaecati voluptates repellat, dolore, eveniet enim praesentium maiores similique! Tempora id iusto aliquam, esse qui quas natus beatae nostrum voluptates, voluptatem aut in ratione sint ducimus! Dolor deserunt suscipit consectetur, rerum tempore doloribus maiores eligendi enim, quibusdam assumenda in iusto beatae quam cum odio at quasi itaque rem ut asperiores. Commodi placeat reprehenderit quia reiciendis quidem eaque itaque, consequuntur atque. Facilis distinctio velit soluta. Vel, maiores animi dolores, accusantium laborum quibusdam eveniet, soluta commodi magni molestiae architecto! Voluptatibus, placeat suscipit corporis blanditiis rem minus earum labore, ipsa hic quo repellendus ipsum modi numquam. Provident dolor non rem error est aliquam sed earum deserunt placeat iure quod minus quos quae hic animi corporis, optio in ea. Inventore tempora quia voluptatem esse. Vitae cum reiciendis assumenda. Itaque consequatur similique doloremque hic odit sed sint molestiae et voluptates facere qui, provident pariatur enim ex rem quisquam ducimus veritatis ullam? Quos eaque suscipit dicta omnis ipsam natus quis esse, nulla saepe impedit voluptatem fugit nobis, eveniet culpa est assumenda odio debitis sit reprehenderit maxime ullam iusto mollitia. Quidem velit quae necessitatibus ipsum, dicta officiis voluptatem, explicabo autem unde, exercitationem laborum. Perferendis eos obcaecati esse. Magnam doloremque qui vel voluptatum minima alias optio, assumenda tempore, sapiente corrupti dignissimos repellat vitae, quidem asperiores dicta accusantium quis inventore sed accusamus quasi! Quasi quae aliquam sint velit optio quos ad nam minima nesciunt reprehenderit? Perspiciatis libero sunt doloribus tenetur consequatur, ratione eligendi! Repudiandae laudantium necessitatibus cumque nobis quibusdam corrupti possimus sint voluptates quis, quos ea culpa? Placeat dolorum consequuntur explicabo ad illo! Ipsa repudiandae reiciendis nisi? Provident, a tempora doloremque aliquid repudiandae est iste animi neque, eos debitis, doloribus natus facere autem laborum assumenda nesciunt nihil corporis explicabo soluta. Aliquam dolores consequatur omnis doloribus culpa? Veniam distinctio omnis vel optio. Autem, mollitia nostrum? Illo distinctio earum laudantium, consequatur labore eveniet ipsum voluptatum veritatis esse et delectus fugiat quam officia, qui amet pariatur quasi ut fuga. Ea nisi vel itaque corrupti ex illum, maiores tempora corporis libero tempore impedit asperiores voluptatum, minus expedita! Ad inventore eveniet culpa soluta ea earum sit voluptates reiciendis, consectetur doloribus error ab laudantium asperiores ullam quod, necessitatibus quasi veniam! Perferendis ex et, quaerat nihil adipisci odit enim perspiciatis fugiat quidem non possimus vitae numquam earum. Facere repudiandae assumenda quis fugiat corporis ipsam voluptas velit, quaerat sequi! Amet rem, mollitia dolore cum quas omnis modi illo eligendi, inventore, vel laborum! Necessitatibus exercitationem omnis, cupiditate, minus similique ratione est molestiae totam quidem enim quas maxime voluptatibus ad voluptate, praesentium tempore doloribus molestias velit hic porro itaque consectetur inventore nisi eius. Ad, rem! At, excepturi, accusantium suscipit libero quis debitis quasi quos minima incidunt veniam error ut molestias aspernatur consectetur. Temporibus enim minima repellendus numquam qui placeat, quos rerum fuga cumque, vitae delectus quaerat blanditiis officiis. Nihil accusantium vel eaque odit, iusto eveniet, illo fugiat a commodi cum architecto, ex sunt laborum accusamus? Maxime cum voluptate mollitia. Rem accusamus expedita eum porro, a, architecto ad laboriosam blanditiis ipsa debitis soluta. Labore soluta laudantium iusto expedita nemo qui illo, unde exercitationem corrupti a. Sunt magni, nisi ipsa voluptatum quae dolorem placeat obcaecati, aliquid distinctio minus rerum in recusandae blanditiis sit expedita natus nobis quasi facere voluptas saepe. Velit, explicabo temporibus neque cupiditate perspiciatis dignissimos doloribus! Accusamus provident eius vitae, ab dolores est excepturi, repellendus veniam nihil consequuntur iusto blanditiis voluptatum maiores beatae tempora perferendis quo. Aliquid fuga, nisi reprehenderit deleniti dolorum perspiciatis porro alias enim dolore ducimus tempora impedit adipisci quidem nobis quae debitis et itaque odio optio eligendi. Illum, excepturi reprehenderit quos nobis asperiores hic maxime non quam eaque! Ratione repellendus alias numquam quibusdam? Aliquam illum dolorum animi aut. Inventore ullam iusto sed natus impedit in, omnis, ad officia quod perferendis nostrum. Atque dicta asperiores quos aliquid! Totam non earum corporis illo vero ut perferendis nisi quis ad culpa aperiam adipisci, dolores repellat dignissimos sunt ea. Commodi sapiente enim error sit eius, nam exercitationem nobis vitae tenetur placeat maxime, saepe eos dolores consectetur dolore quaerat minima molestiae qui inventore neque illo aperiam non? Impedit officia repudiandae, molestiae quod, soluta iure dolorum vitae est rerum incidunt, magni earum officiis labore distinctio id praesentium ipsam iusto vel dicta? Ducimus nisi cum tenetur porro reiciendis itaque fugiat doloribus molestiae, vero explicabo consequatur deleniti, corrupti amet iure accusamus aut, quisquam natus a quis magnam dolore officiis? Atqu
-                e numquam nostrum fuga, id expedita a ullam l
-                aborum nisi rem labore ratione qui eos dolorem, repellendus, voluptates quos non accusamus sunt tempora. Dicta, dignissimos distinctio est repudiandae fugit, dolorum eveniet it
-                
-                aque omnis sunt accusamus adipisci, debitis accusantium? Ipsum enim deserunt nisi corporis accusamus expedita natus officiis, officia, odit pariatur ipsam mag
-                nam eius temporibus quae quisquam voluptatibus harum esse, molestias libero repellendus consectetur exercitationem a. Consectetur ex excepturi tempore. Aperiam quibusdam quas, illu
-                m dolorum non doloribus exercitationem ex, aspernatur alias officiis id repudiandae? Doloribus, sint? Earum, reprehenderit odio labore vitae voluptate ab, repudiandae esse ipsa rerum repellat recusandae? Facere maiores doloribus quibusdam omnis natus dicta repudiandae! Magnam ut ratione, laudantium saepe temporibus atque commodi amet consequatur tempore quidem cumque nobis aperiam a neque dolores dolor explicabo natus dolorem ipsam quas soluta placeat eos. Velit dolores voluptas debitis illo saepe facilis sint, dignissimos ratione obcaecati ipsa excepturi, magnam numquam accusantium reiciendis? Harum numquam rerum neque dolore assumenda provident fugiat, odio officiis rem quaerat doloremque, error vitae ad, qui quod perferendis temporibus. Laborum, repudiandae impedit!
-            </div>
-        </div>
-    </div>
+        <div class="content-desc2"></div>
+      </div>
 
-    <!-- Tin tức -->
-    <div class="container">
-        <h1>Trung tâm tin tức</h1>
-        <div class="new">
-            <div class="news-item">
-                <div class="news-image" style="background-image: url(https://assets.grab.com/wp-content/uploads/sites/11/2022/12/13192551/O%CC%82ng-Alejandro-Osorio-Gia%CC%81m-do%CC%82%CC%81c-Die%CC%82%CC%80u-ha%CC%80nh-Grab-Vie%CC%A3%CC%82t-Nam-copy-scaled.jpeg);"></div>
-               <div class="news-date">13/12/22</div> 
-                <div class="news-text">Grab bổ nhiệm ông Alejandro Osorio là Giám đốc điều hành. Ở 1 công ty tên là Grab</div>
-                <div class="news-readmore">Xem thêm</div>
-            </div>
-        
-        
-
-            
+      <div class="content-item">
+        <ul class="menu">
+          <li class="menu-item ntd"><a href="#">Người tiêu dùng</a></li>
+          <li class="menu-item tx"><a href="#">Đối tác tài xế</a></li>
+          <li class="menu-item tn"><a href="#">Đối tác thương nhân</a></li>
+          <li class="menu-item dn"><a href="#">Doanh nghiệp</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-grid ntd-content">
+          <div class="content-item-user-1">
+            <span>Giao hàng</span>
+          </div>
+          <div class="content-item-user-2">
+            <span>Đồ ăn</span>
+          </div>
         </div>
+        <div class="content-grid tx-content">
+          <!-- Nội dung cho Đối tác tài xế -->
+          <h1>Nội dung tài xế</h1>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          voluptatum quos distinctio debitis repellat? Expedita, sequi ullam
+          quisquam voluptates rem quas quaerat magni sit cumque cupiditate nihil
+          architecto aliquam, nulla numquam odit illo dolore reprehenderit
+          recusandae impedit in obcaecati repudiandae consequuntur. Reiciendis
+          fugiat commodi nobis! Similique est quidem labore minima dolorum dolor
+          sint deleniti voluptatibus ab dignissimos quaerat, ad doloribus esse
+          ullam ratione, quo perferendis. Iusto quaerat id error! Ullam
+          necessitatibus sit pariatur dicta nam ipsa corrupti, alias expedita
+          quos aspernatur quisquam sequi earum, sed facilis illo dolorum
+          exercitationem nulla aliquid et magnam deleniti culpa possimus fugiat.
+          Laudantium, velit. Perferendis, mollitia ea necessitatibus odio
+          nostrum tempora et itaque optio! Nemo laudantium ad incidunt atque
+          ipsum beatae consectetur cumque, in, deserunt reiciendis aperiam
+          consequuntur suscipit minima, ea harum possimus numquam esse
+          asperiores sit! Consequatur id dolore corporis, laudantium porro,
+          molestiae enim beatae ipsum magnam odit dolorem deleniti alias,
+          tenetur eum tempora.
+        </div>
+        <div class="content-grid tn-content">
+          <!-- Nội dung cho Đối tác thương nhân -->
+          <h1>Nội dung thương nhân</h1>
+          Lorem ipsum dolor sit amet consec tetur adipisicing elit. Praesentium,
+          dolore ab illum qui reprehenderit officiis iure sequi! Repelle ndus
+          minus obcaecati iste. Ex quae inventore quo amet pariatur. Nam fuga,
+          commodi quasi excepturi quia quo quisquam aspernatur labore tenetur!
+          Molestias totam quisquam aspernatur, adipisci dicta vero sequi omnis
+          distinctio pariatur neque ab est dolorem? Quaerat quis molestiae
+          fugiat asperiores iusto dolore culpa optio odit rem necessitatibus,
+          mollitia tenetur. Nobis quam consequuntur culpa quas, veniam sit
+          doloremque! Veniam, beatae eveniet eius consequatur maxime vel porro
+          non ea cupiditate. Repudiandae totam modi non odio? Dolor iure omnis
+          doloremque tenetur adipisci dicta sequi earum, vitae non fugit eveniet
+          corporis quidem beatae minima mollitia rerum exercitationem quae nam
+          veritatis commodi dolores. Fugit enim ea, deserunt ab, at numquam
+          praesentium, accusantium natus qui omnis ipsa et distinctio? Eius
+          numquam recusandae culpa minima consectetur saepe? Reiciendis ea
+          possimus obcaecati asperiores exercitationem officiis laudantium?
+          Omnis, facilis quas. Possimus quam fugiat voluptas cumque
+          reprehenderit quod illo impedit quidem ipsa, eum vero recusandae
+          reiciendis fuga veniam nesciunt incidunt est id nisi! Amet provident
+          est explicabo laudantium. Quia, dolore atque. Culpa accusamus
+          molestiae ipsum ab inventore est at ut. Cumque numquam quo inventore a
+          animi odit recusandae ipsa temporibus quae. Qui id dicta veritatis,
+          repellat, eos iusto numquam omnis facilis sit, nam temporibus.
+          Consectetur, quam fugit. Ea voluptatibus harum vitae autem minima ipsa
+          sint ipsum. Ipsam, repellat libero praesentium molestiae soluta
+          delectus cum deleniti illum architecto quae. Aut suscipit odio quas
+          voluptatibus, nulla quo. Cum repellat nam accusamus unde nesciunt
+          laudantium?
+        </div>
+        <div class="content-grid dn-content">
+          <!-- Nội dung cho Doanh nghiệp -->
+          <h1>Nội dung doanh nghiệp</h1>
+          Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Neque soluta
+          placeat optio sequi voluptatem! Et hic suscipit perferendis, inventore
+          incidunt sapiente quis tenetur repellat, mollitia natus quo pariatur?
+          Id modi aperiam rerum animi unde. A neque tempora facere nesciunt quam
+          quibusdam excepturi? Quo dolor quasi labore voluptates. Blanditiis,
+          adipisci id possimus itaque ab, assumenda commodi atque nostrum sed
+          consequatur pariatur facilis impedit. Qui, maxime? Alias quod veniam
+          repellendus ipsum reprehenderit itaque, ut quaerat eum accusamus
+          aspernatur nobis sint maiores nesciunt veritatis ab! Officia,
+          molestiae. Repellat et minima doloribus sapiente dolores. Tempora,
+          culpa harum. Iure sequi illo magni optio, nam voluptatibus cumque
+          natus nulla delectus ex placeat odio quae deserunt a quam. Maiores
+          culpa neque nam? Quas mollitia fugiat similique tempore blanditiis nam
+          repellendus hic corporis laboriosam amet quibusdam fuga eaque
+          voluptates soluta quidem neque perspiciatis nesciunt sequi delectus
+          temporibus, labore odio. Quam pariatur animi expedita porro doloribus
+          nostrum nisi nesciunt, hic iure cupiditate tenetur, consectetur ab
+          aspernatur dolorem sequi quisquam eligendi explicabo, aut illo aliquid
+          facilis dignissimos placeat. Earum voluptates nesciunt ea aliquid
+          reiciendis beatae ipsam illum dolore, soluta dignissimos, dolor
+          sapiente ad fugiat vel veniam? Unde fuga exercitationem iste
+          necessitatibus rerum perspiciatis tempora ipsa. Adipisci debitis,
+          dolore at deleniti nihil totam, quod fugiat cum autem obcaecati, saepe
+          quasi nostrum? Dolore excepturi voluptates sequi iure asperiores
+          tenetur explicabo minus consequatur tempore facilis, ipsa aliquam aut
+          ea animi reprehenderit porro pariatur mollitia. Vero beatae voluptates
+          dolor! Nesciunt dicta illum recusandae tempora et optio iste eaque?
+          Nesciunt minima voluptate dolores ad, tenetur voluptatibus nihil
+          excepturi voluptas incidunt veniam illum unde beatae vitae corrupti.
+          Illum quos fugiat tenetur perferendis nemo! Atque odit ex natus alias
+          perferendis iure exercitationem fugiat eius facere non corrupti
+          nesciunt mollitia fuga, esse eos cum tempore, ad placeat sunt quasi
+          doloribus magni! Iste, totam. Necessitatibus accusantium dolorum
+          tempora sint quidem doloremque facere ipsam mollitia, eum nemo
+          repellendus obcaecati delectus officiis saepe. Voluptatibus id,
+          praesentium officia rerum quibusdam magni ipsa quis a in maiores.
+          Velit illo nesciunt quas similique modi consequuntur, dolore totam
+          voluptatem ea laboriosam nostrum maiores cum necessitatibus assumenda
+          nobis non unde doloremque neque harum quaerat nemo dolor pariatur?
+          Tenetur animi enim laboriosam earum, quibusdam natus excepturi
+          possimus soluta error quod minima reprehenderit laborum nesciunt
+          commodi blanditiis sequi quam illo velit. Libero quae nemo in, harum
+          fugiat repellendus, consequuntur, aut odit sit dolorum quas. Veniam
+          dolore veritatis earum quo ea sed nihil labore, cumque, dignissimos
+          enim quisquam, aliquid deserunt. Beatae officiis sequi dolorem
+          dignissimos iste soluta quidem facere vel eius dolore, inventore
+          aliquid veniam doloremque quae ullam. Exercitationem incidunt vel
+          accusamus accusantium perspiciatis? Dicta vitae assumenda, suscipit
+          ipsum officiis quis in tenetur totam nihil nesciunt consequuntur unde
+          dolorum quidem. Debitis ut eveniet mollitia soluta in quia,
+          doloremque, labore ad rerum magnam animi voluptates quidem amet natus
+          odio molestiae, totam at illum facilis praesentium libero quibusdam.
+          Quibusdam, deleniti? Impedit tenetur veniam facere ullam soluta
+          delectus inventore, deleniti distinctio commodi repellendus ipsum
+          earum recusandae numquam ipsa amet incidunt possimus perspiciatis,
+          necessitatibus saepe sit dolorum. Sapiente hic est quod architecto
+          modi minus quos quasi ut! Fugiat natus rerum molestias delectus quis
+          illo dolores quibusdam magni maiores in, officia nemo quos debitis sed
+          a perferendis. Nulla ullam obcaecati quis maiores minima quibusdam!
+          Rerum, quidem doloribus porro laboriosam voluptate culpa, dolores
+          provident eos minima nulla deleniti quaerat quas sed reiciendis
+          corrupti optio. Nostrum error possimus tempora. Animi, explicabo
+          perferendis. Tempore est consequuntur esse, vero magni pariatur et
+          tenetur, harum sed doloremque in quis dolorum accusamus ratione
+          quisquam eius praesentium autem. Tenetur totam deleniti necessitatibus
+          non assumenda minus a iure? Debitis beatae doloremque praesentium,
+          quidem, rem tempora porro cum ab optio incidunt, similique
+          perspiciatis omnis quod animi ea nemo. Quae, delectus. Architecto
+          pariatur eos est ipsum ipsam placeat obcaecati voluptates repellat,
+          dolore, eveniet enim praesentium maiores similique! Tempora id iusto
+          aliquam, esse qui quas natus beatae nostrum voluptates, voluptatem aut
+          in ratione sint ducimus! Dolor deserunt suscipit consectetur, rerum
+          tempore doloribus maiores eligendi enim, quibusdam assumenda in iusto
+          beatae quam cum odio at quasi itaque rem ut asperiores. Commodi
+          placeat reprehenderit quia reiciendis quidem eaque itaque,
+          consequuntur atque. Facilis distinctio velit soluta. Vel, maiores
+          animi dolores, accusantium laborum quibusdam eveniet, soluta commodi
+          magni molestiae architecto! Voluptatibus, placeat suscipit corporis
+          blanditiis rem minus earum labore, ipsa hic quo repellendus ipsum modi
+          numquam. Provident dolor non rem error est aliquam sed earum deserunt
+          placeat iure quod minus quos quae hic animi corporis, optio in ea.
+          Inventore tempora quia voluptatem esse. Vitae cum reiciendis
+          assumenda. Itaque consequatur similique doloremque hic odit sed sint
+          molestiae et voluptates facere qui, provident pariatur enim ex rem
+          quisquam ducimus veritatis ullam? Quos eaque suscipit dicta omnis
+          ipsam natus quis esse, nulla saepe impedit voluptatem fugit nobis,
+          eveniet culpa est assumenda odio debitis sit reprehenderit maxime
+          ullam iusto mollitia. Quidem velit quae necessitatibus ipsum, dicta
+          officiis voluptatem, explicabo autem unde, exercitationem laborum.
+          Perferendis eos obcaecati esse. Magnam doloremque qui vel voluptatum
+          minima alias optio, assumenda tempore, sapiente corrupti dignissimos
+          repellat vitae, quidem asperiores dicta accusantium quis inventore sed
+          accusamus quasi! Quasi quae aliquam sint velit optio quos ad nam
+          minima nesciunt reprehenderit? Perspiciatis libero sunt doloribus
+          tenetur consequatur, ratione eligendi! Repudiandae laudantium
+          necessitatibus cumque nobis quibusdam corrupti possimus sint
+          voluptates quis, quos ea culpa? Placeat dolorum consequuntur explicabo
+          ad illo! Ipsa repudiandae reiciendis nisi? Provident, a tempora
+          doloremque aliquid repudiandae est iste animi neque, eos debitis,
+          doloribus natus facere autem laborum assumenda nesciunt nihil corporis
+          explicabo soluta. Aliquam dolores consequatur omnis doloribus culpa?
+          Veniam distinctio omnis vel optio. Autem, mollitia nostrum? Illo
+          distinctio earum laudantium, consequatur labore eveniet ipsum
+          voluptatum veritatis esse et delectus fugiat quam officia, qui amet
+          pariatur quasi ut fuga. Ea nisi vel itaque corrupti ex illum, maiores
+          tempora corporis libero tempore impedit asperiores voluptatum, minus
+          expedita! Ad inventore eveniet culpa soluta ea earum sit voluptates
+          reiciendis, consectetur doloribus error ab laudantium asperiores ullam
+          quod, necessitatibus quasi veniam! Perferendis ex et, quaerat nihil
+          adipisci odit enim perspiciatis fugiat quidem non possimus vitae
+          numquam earum. Facere repudiandae assumenda quis fugiat corporis ipsam
+          voluptas velit, quaerat sequi! Amet rem, mollitia dolore cum quas
+          omnis modi illo eligendi, inventore, vel laborum! Necessitatibus
+          exercitationem omnis, cupiditate, minus similique ratione est
+          molestiae totam quidem enim quas maxime voluptatibus ad voluptate,
+          praesentium tempore doloribus molestias velit hic porro itaque
+          consectetur inventore nisi eius. Ad, rem! At, excepturi, accusantium
+          suscipit libero quis debitis quasi quos minima incidunt veniam error
+          ut molestias aspernatur consectetur. Temporibus enim minima
+          repellendus numquam qui placeat, quos rerum fuga cumque, vitae
+          delectus quaerat blanditiis officiis. Nihil accusantium vel eaque
+          odit, iusto eveniet, illo fugiat a commodi cum architecto, ex sunt
+          laborum accusamus? Maxime cum voluptate mollitia. Rem accusamus
+          expedita eum porro, a, architecto ad laboriosam blanditiis ipsa
+          debitis soluta. Labore soluta laudantium iusto expedita nemo qui illo,
+          unde exercitationem corrupti a. Sunt magni, nisi ipsa voluptatum quae
+          dolorem placeat obcaecati, aliquid distinctio minus rerum in
+          recusandae blanditiis sit expedita natus nobis quasi facere voluptas
+          saepe. Velit, explicabo temporibus neque cupiditate perspiciatis
+          dignissimos doloribus! Accusamus provident eius vitae, ab dolores est
+          excepturi, repellendus veniam nihil consequuntur iusto blanditiis
+          voluptatum maiores beatae tempora perferendis quo. Aliquid fuga, nisi
+          reprehenderit deleniti dolorum perspiciatis porro alias enim dolore
+          ducimus tempora impedit adipisci quidem nobis quae debitis et itaque
+          odio optio eligendi. Illum, excepturi reprehenderit quos nobis
+          asperiores hic maxime non quam eaque! Ratione repellendus alias
+          numquam quibusdam? Aliquam illum dolorum animi aut. Inventore ullam
+          iusto sed natus impedit in, omnis, ad officia quod perferendis
+          nostrum. Atque dicta asperiores quos aliquid! Totam non earum corporis
+          illo vero ut perferendis nisi quis ad culpa aperiam adipisci, dolores
+          repellat dignissimos sunt ea. Commodi sapiente enim error sit eius,
+          nam exercitationem nobis vitae tenetur placeat maxime, saepe eos
+          dolores consectetur dolore quaerat minima molestiae qui inventore
+          neque illo aperiam non? Impedit officia repudiandae, molestiae quod,
+          soluta iure dolorum vitae est rerum incidunt, magni earum officiis
+          labore distinctio id praesentium ipsam iusto vel dicta? Ducimus nisi
+          cum tenetur porro reiciendis itaque fugiat doloribus molestiae, vero
+          explicabo consequatur deleniti, corrupti amet iure accusamus aut,
+          quisquam natus a quis magnam dolore officiis? Atqu e numquam nostrum
+          fuga, id expedita a ullam l aborum nisi rem labore ratione qui eos
+          dolorem, repellendus, voluptates quos non accusamus sunt tempora.
+          Dicta, dignissimos distinctio est repudiandae fugit, dolorum eveniet
+          it aque omnis sunt accusamus adipisci, debitis accusantium? Ipsum enim
+          deserunt nisi corporis accusamus expedita natus officiis, officia,
+          odit pariatur ipsam mag nam eius temporibus quae quisquam voluptatibus
+          harum esse, molestias libero repellendus consectetur exercitationem a.
+          Consectetur ex excepturi tempore. Aperiam quibusdam quas, illu m
+          dolorum non doloribus exercitationem ex, aspernatur alias officiis id
+          repudiandae? Doloribus, sint? Earum, reprehenderit odio labore vitae
+          voluptate ab, repudiandae esse ipsa rerum repellat recusandae? Facere
+          maiores doloribus quibusdam omnis natus dicta repudiandae! Magnam ut
+          ratione, laudantium saepe temporibus atque commodi amet consequatur
+          tempore quidem cumque nobis aperiam a neque dolores dolor explicabo
+          natus dolorem ipsam quas soluta placeat eos. Velit dolores voluptas
+          debitis illo saepe facilis sint, dignissimos ratione obcaecati ipsa
+          excepturi, magnam numquam accusantium reiciendis? Harum numquam rerum
+          neque dolore assumenda provident fugiat, odio officiis rem quaerat
+          doloremque, error vitae ad, qui quod perferendis temporibus. Laborum,
+          repudiandae impedit!
+        </div>
+      </div>
+
+      <!-- Tin tức -->
+      <h1>Trung tâm tin tức</h1>
+      <div class="new">
+        <div class="news-item">
+          <div
+            class="news-image"
+            style="
+              background-image: url(https://assets.grab.com/wp-content/uploads/sites/11/2022/12/13192551/O%CC%82ng-Alejandro-Osorio-Gia%CC%81m-do%CC%82%CC%81c-Die%CC%82%CC%80u-ha%CC%80nh-Grab-Vie%CC%A3%CC%82t-Nam-copy-scaled.jpeg);
+            "
+          ></div>
+          <div class="news-date">13/12/22</div>
+          <div class="news-text">
+            Grab bổ nhiệm ông Alejandro Osorio là Giám đốc điều hành. Ở 1 công
+            ty tên là Grab
+          </div>
+          <div class="news-readmore">Xem thêm</div>
+        </div>
+      </div>
     </div>
-    
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2023 Webite làm với mục đích học hỏi không có nhu cầu kinh
+        doanh!.
+      </p>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
