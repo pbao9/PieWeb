@@ -59,7 +59,7 @@ header ul li{
 
 header ul li a{
     color: white;
-    font-family: bevietnampro_bold;
+    font-family: bevietnampro_light;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 15px;
@@ -250,7 +250,7 @@ a.active,a:hover{
 
 .menu-item a:hover{
     text-decoration: none;
-    color: #0A067D;
+    color: #2697F9;
     border-radius: 15px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -263,12 +263,30 @@ a.active,a:hover{
 
 .content-item-user-1,
 .content-item-user-2 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: auto;
     background-color: #fff;
     transition: background-color 0.3s;
+}
+
+
+.content-item-user-2 i{
+    font-size: 5em;
+    border-radius: 25px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+.content-item-sub-user-1{
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.content-item-user-1{
+    font-family: bevietnampro_bold;
+    font-size: 2em;
 }
 
 .content-grid {
